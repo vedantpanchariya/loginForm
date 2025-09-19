@@ -23,7 +23,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #f1f1f1; /* soft white */
+    color: #f1f1f1; 
 }
 
 label {
@@ -94,20 +94,12 @@ input:focus {
     transform: scale(1.02);      
 }
 
-
-
-
-/* remove number arrows */
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type=number] {
-    -moz-appearance: textfield;
-}
 
-/* --- Button --- */
 button {
     margin-top: 20px;
     margin-left: 50px;
@@ -128,7 +120,7 @@ button:hover {
 }
 
 
-a {
+a{
     color: #f1f1f1;
     text-decoration: none;
     transition: color 0.2s;
