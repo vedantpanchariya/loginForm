@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(odin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1; /* soft white */
+}
+
+label {
+    display: block;
+    min-width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #f1f1f1;
+}
+
+.header {
+    position: relative;
+    right: 50%;
+    bottom: 60px;
+    font-size: 28px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.header-two {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    color: #dcdcdc;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-flow: column wrap;
+    gap: 20px;
+    width: 50vw;
+    font-size: 15px;
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+}
+
+input {
+    width: 250px;
+    height: 30px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 5px 10px;
+    color: white;
+    transition: all 0.3s ease;
+    border: none;
+}
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus {
+    outline: none;
+    border: 2px solid #b058f9;   
+    box-shadow: 0 0 8px rgba(176, 88, 249, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.02);      
+}
+
+
+
+
+/* remove number arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* --- Button --- */
+button {
+    margin-top: 20px;
+    margin-left: 50px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #b058f9;
+    color: #ffffff;
+    transition: 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #9625f2;
+    transform: translateY(3px);
+}
+
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #837dff;
+    text-decoration: underline;
+}
+
+.login {
+    font-size: 18px;
+    margin-left: 50px;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #cccccc;
+}
